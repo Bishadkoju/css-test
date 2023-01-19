@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="sidebar">
+    <h2>Online File Management System</h2>
+  </div>
+  <div class="content">
+    <nav class="navbar">
+      <div class="profile">John Doe</div>
+      <div class="menu"><button id="myBtn">New Folder</button></div>
+      <div class="settings">
+        <i class="fas fa-user"></i>
+        <i class="fas fa-cog"></i>
+      </div>
+    </nav>
+    <div class="grid-container">
+      <div class="folder-card">
+        <i class="folder-icon fas fa-folder"></i>
+        <div class="folder-name">Folder 1</div>
+        <div class="folder-description">Description for folder 1</div>
+      </div>
+      <div class="folder-card">
+        <i class="folder-icon fas fa-folder"></i>
+        <div class="folder-name">Folder 2</div>
+        <div class="folder-description">Description for folder 2</div>
+      </div>
+      <div class="folder-card">
+        <i class="folder-icon fas fa-folder"></i>
+        <div class="folder-name">Folder 3</div>
+        <div class="folder-description">Description for folder 3</div>
+      </div>
+      <div class="folder-card">
+        <i class="folder-icon fas fa-folder"></i>
+        <div class="folder-name">Folder 4</div>
+        <div class="folder-description">Description for folder 4</div>
+      </div>
+      <div class="folder-card">
+        <i class="folder-icon fas fa-folder"></i>
+        <div class="folder-name">Folder 5</div>
+        <div class="folder-description">Description for folder 5</div>
+      </div>
+      <div class="folder-card">
+        <i class="folder-icon fas fa-folder"></i>
+        <div class="folder-name">Folder 6</div>
+        <div class="folder-description">Description for folder 6</div>
+      </div>
+      <div class="folder-card">
+        <i class="folder-icon fas fa-folder"></i>
+        <div class="folder-name">Folder 7</div>
+        <div class="folder-description">Description for folder 7</div>
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form class="form-container">
+      <h2>Create New Folder</h2>
+      <label for="folder-name">Folder Name:</label>
+      <input type="text" id="folder-name" name="folder-name">
+      <label for="folder-description">Folder Description:</label>
+      <textarea id="folder-description" name="folder-description"></textarea>
+      <input type="submit" value="Create">
+    </form>
+      </div>
+
+    </div>
+  </div>
+  <script src="script.js" ></script>
+</body>
+
+</html>
